@@ -49,8 +49,8 @@
       <target file="biblioteka.o" lastModified="15bab7b9dae">
          <source file="..\..\..\biblioteka.c" lastModified="14b0e484400"/>
       </target>
-      <target file="main.o" lastModified="15bab9f138d">
-         <source file="..\..\..\main.c" lastModified="15bab9f0b5d"/>
+      <target file="main.o" lastModified="15babaa7315">
+         <source file="..\..\..\main.c" lastModified="15babaa7078"/>
       </target>
       <target file="stm32f4xx_usart.o" lastModified="15bab7b9e4d">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15b634ce90b"/>

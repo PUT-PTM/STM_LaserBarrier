@@ -15,13 +15,13 @@ int first=0; //was this the first time the beam was interrupted?
 int grace=0; //used to prevent mistaking a long object for a really fast object, grace makes the app wait for the laser to shine again on the sensor
 long int wait=0; //waits a few cycles so the ifs don't get triggered like a million times a second on account of ADC being crazy
 int ignore=0; //if an if was triggered ignore everything for about 500ms for now will be tweaked later
-int ignoreduration=1000; //for how long ignore ifs after triggering
+int ignoreduration=500; //for how long ignore ifs after triggering
 
 void TIM3_IRQHandler(void){
 	if(TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
 	{
 
-		ms++;								// a stupid hack, needs to be changed, there has to be a way to get the time elapsed from the registry ÂŻ\_(ă�„)_/ÂŻ
+		ms++;								// a stupid hack, needs to be changed, there has to be a way to get the time elapsed from the registry ÂŻ\_(ă�„)_/ÂŻ BUT IT WERKS
 	TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
 	}
 }
@@ -55,7 +55,7 @@ int main(void)
 		calibration=TM_ADC_Read(ADC2, ADC_Channel_11); //PC1		//calibration connected to a potentiometer changes the threshold when the beam is considered as interrupted
 
 		//$#$@$#%@
-		//######$$$$$$$$$ SOME WAY TO MAKE IT MORE ROBOUST, PERHAPS SOME KIND OF DEFENSE MECHANISM TO COMBAT RANDOM BRIGHTNESS CHANGES/AUTOMATIC BRIGHTNESS ADJUSTMENT#$$$$$$$$$$$$#############
+		//######$$$$$$$$$ SOME WAY TO MAKE IT MORE ROBOUST, PERHAPS SOME KIND OF DEFENSE MECHANISM TO COMBAT RANDOM BRIGHTNESS CHANGES/AUTOMATIC BRIGHTNESS THRESHOLD ADJUSTMENT#$$$$$$$$$$$$#############
 		//$#$##$#$
 		if(!ignore){
 			if(light<calibration && grace==0){ //if the beam was intterupted and its not still being interrupted by the same object
@@ -86,6 +86,6 @@ int main(void)
 				ignore=1;
 			}
 		}
-		if(ms-wait>ignoreduration){ignore=0;} //if the time from triggering an if is greater than 500ms check for ifs
+		if(ms-wait>ignoreduration){ignore=0;} //if the time from triggering an if is greater than ignoreduration check for ifs
 	}
 }

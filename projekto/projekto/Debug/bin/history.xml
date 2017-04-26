@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=projekto.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\projekto -TC:\CooCox\CoIDE\configuration\ProgramData\projekto/arm-gcc-link.ld -g">
-      <target file="projekto.elf" lastModified="15bab9f15be">
+      <target file="projekto.elf" lastModified="15babaa754b">
          <source file="..\obj\stm32f4xx_syscfg.o" lastModified="15bab7b9cd2"/>
          <source file="..\obj\biblioteka.o" lastModified="15bab7b9dae"/>
          <source file="..\obj\stm32f4xx_usart.o" lastModified="15bab7b9e4d"/>
          <source file="..\obj\tm_stm32f4_adc.o" lastModified="15bab7b9f05"/>
          <source file="..\obj\stm32f4xx_dac.o" lastModified="15bab7b9f90"/>
          <source file="..\obj\startup_stm32f4xx.o" lastModified="15bab7b9ffb"/>
-         <source file="..\obj\main.o" lastModified="15bab9f138d"/>
+         <source file="..\obj\main.o" lastModified="15babaa7315"/>
          <source file="..\obj\stm32f4xx_rcc.o" lastModified="15bab7ba155"/>
          <source file="..\obj\stm32f4xx_adc.o" lastModified="15bab7ba1f6"/>
          <source file="..\obj\stm32f4xx_gpio.o" lastModified="15bab7ba294"/>
