@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_boot /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_lib /I..\..\..\..\.. /I..\..\..\..\..\STM_LaserBarrier\projekto /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_lib\include /I..\..\..\..\..\STM_LaserBarrier /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis">
+   <includePath signature="/I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_boot /I..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_lib /I..\..\..\..\.. /I..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay /I..\..\..\..\..\STM_LaserBarrier\projekto /I..\..\..\..\..\Users\DISGUST-MAXIMUS /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_lib\include /I..\..\..\..\..\STM_LaserBarrier /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis">
       <source file="..\..\..\tm_stm32f4_gpio.c" lastModified="14de25630e8">
          <include file="..\..\..\tm_stm32f4_gpio.h"/>
       </source>
@@ -68,6 +68,12 @@
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
+      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.h" lastModified="149f3134801">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\defines.h"/>
+      </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="15b635014fc">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
@@ -77,6 +83,9 @@
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="15b6350b7fc">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.c" lastModified="1488e449b75">
+         <include file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="15b6350d90c">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
@@ -124,9 +133,23 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="15b634ce906">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
+      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_delay.h" lastModified="15262d40c5f">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\attributes.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.h"/>
+      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15b634ce90b">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_delay.c" lastModified="14fdb0eed12">
+         <include file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_delay.h"/>
+      </source>
+      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\attributes.h" lastModified="149eb8ec290">
       </source>
       <source file="..\..\..\defines.h" lastModified="14927dc8f9d">
       </source>

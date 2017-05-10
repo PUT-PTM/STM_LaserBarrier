@@ -7,7 +7,7 @@
 //#include "tm_stm32f4_adc.h"
 volatile double light;
 volatile double calibration;
-double speed=0;
+double speed=0;//m/s
 double distance=1;
 double time=0;
 long int ms=0;
@@ -21,7 +21,7 @@ void TIM3_IRQHandler(void){
 	if(TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
 	{
 
-		ms++;								// a stupid hack, needs to be changed, there has to be a way to get the time elapsed from the registry ÂŻ\_(ă�„)_/ÂŻ BUT IT WERKS
+		ms++;								// a stupid hack, needs to be changed, there has to be a way to get the time elapsed from the registry Ă‚Ĺ»\_(Ä�ďż˝â€ž)_/Ă‚Ĺ» BUT IT WERKS
 	TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
 	}
 }
@@ -52,13 +52,13 @@ int main(void)
 
 		}
 		light=TM_ADC_Read(ADC1, ADC_Channel_3); //PA3			//brightness
-		calibration=TM_ADC_Read(ADC2, ADC_Channel_11); //PC1		//calibration connected to a potentiometer changes the threshold when the beam is considered as interrupted
+		calibration=TM_ADC_Read(ADC2, ADC_Channel_11)+50; //PC1		//calibration connected to a potentiometer changes the threshold when the beam is considered as interrupted
 
 		//$#$@$#%@
 		//######$$$$$$$$$ SOME WAY TO MAKE IT MORE ROBOUST, PERHAPS SOME KIND OF DEFENSE MECHANISM TO COMBAT RANDOM BRIGHTNESS CHANGES/AUTOMATIC BRIGHTNESS THRESHOLD ADJUSTMENT#$$$$$$$$$$$$#############
 		//$#$##$#$
 		if(!ignore){
-			if(light<calibration && grace==0){ //if the beam was intterupted and its not still being interrupted by the same object
+			if(light>calibration && grace==0){ //if the beam was interrupted and its not still being interrupted by the same object
 				if(first==0){	//if the beam was interrupted first time
 					//zacznij liczyc czas (zerujemy licznika i lecimy)
 					ms=0;
@@ -78,7 +78,7 @@ int main(void)
 				// Waste some time //DONT
 				//for (int i = 0; i < 50000; i++); //NO
 			}
-			if(light>calibration && grace==1){ //if the beam is not interrupted and it's after it was interrupted
+			if(light<calibration && grace==1){ //if the beam is not interrupted and it's after it was interrupted
 				// Waste some time		//BAD PRACTICE
 				//for (int i = 0; i < 50000; i++);	// DONT DO THIS AT HOME KIDS
 				grace=0;	//goes back to normal
