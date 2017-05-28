@@ -1,64 +1,70 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_boot -I..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads -I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_lib -I..\..\..\..\.. -I..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay -I..\..\..\..\..\STM_LaserBarrier\projekto -I..\..\..\..\..\Users\DISGUST-MAXIMUS -I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_lib\include -I..\..\..\..\..\STM_LaserBarrier -I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis">
-      <target file="stm32f4xx_exti.o" lastModified="15bf3869c70">
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -IC:\STM_LaserBarrier\projekto\cmsis_boot -IC:\STM_LaserBarrier\projekto\cmsis_lib -IC:\ -IC:\STM_LaserBarrier\projekto -IC:\STM_LaserBarrier\projekto\cmsis_lib\include -IC:\STM_LaserBarrier -IC:\STM_LaserBarrier\projekto\cmsis">
+      <target file="stm32f4xx_exti.o" lastModified="15c4fa86c9a">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="15b63501501"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="15bf386998f">
+      <target file="stm32f4xx_gpio.o" lastModified="15c4fa86584">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="15b632d989b"/>
       </target>
-      <target file="stm32f4xx_syscfg.o" lastModified="15bf386933d">
+      <target file="stm32f4xx_syscfg.o" lastModified="15c4fa8554d">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="15b63514ee5"/>
       </target>
-      <target file="tm_stm32f4_gpio.o" lastModified="15bf3869d88">
+      <target file="tm_stm32f4_gpio.o" lastModified="15c4fa86f6e">
          <source file="..\..\..\tm_stm32f4_gpio.c" lastModified="14de25630e8"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="15bf3869651">
+      <target file="startup_stm32f4xx.o" lastModified="15c4fa85e28">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="15b632d67b8"/>
       </target>
-      <target file="stm32f4xx_tim.o" lastModified="15bf3869eff">
+      <target file="stm32f4xx_tim.o" lastModified="15c4fa87279">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="15b634ca5cb"/>
       </target>
-      <target file="stm32f4xx_adc.o" lastModified="15bf3869863">
+      <target file="stm32f4xx_adc.o" lastModified="15c4fa862c9">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="15b634cbbab"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="15bf3869a13">
+      <target file="system_stm32f4xx.o" lastModified="15c4fa866e4">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="15b63354a5e"/>
       </target>
-      <target file="tm_stm32f4_timer_properties.o" lastModified="15bf3869e15">
-         <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.c" lastModified="1488e449b75"/>
+      <target file="tm_stm32f4_timer_properties.o" lastModified="15c4fa870ca">
+         <source file="..\..\..\tm_stm32f4_timer_properties.c" lastModified="1488e449b75"/>
       </target>
-      <target file="misc.o" lastModified="15bf3869cf1">
+      <target file="misc.o" lastModified="15c4fa86e1e">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="15b634fb4ac"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="15bf3869aaa">
+      <target file="stm32f4xx_dma.o" lastModified="15c4fa8686e">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="15b63512d50"/>
       </target>
-      <target file="stm32f4xx_spi.o" lastModified="15bf3869b48">
+      <target file="stm32f4xx_spi.o" lastModified="15c4fa869cd">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="15b6350d90c"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="15bf38697bb">
+      <target file="stm32f4xx_rcc.o" lastModified="15c4fa86127">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="15b632d988e"/>
       </target>
-      <target file="tm_stm32f4_adc.o" lastModified="15bf3869554">
+      <target file="tm_stm32f4_adc.o" lastModified="15c4fa85bae">
          <source file="..\..\..\tm_stm32f4_adc.c" lastModified="15b63cf29f3"/>
       </target>
-      <target file="stm32f4xx_dac.o" lastModified="15bf38695e3">
+      <target file="stm32f4xx_dac.o" lastModified="15c4fa85cea">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_dac.c" lastModified="15b634cd06f"/>
       </target>
-      <target file="stm32f4xx_i2c.o" lastModified="15bf3869beb">
+      <target file="syscalls.o" lastModified="15c4fce97a3">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="15c4fce5173"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="15c4fa86b4a">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="15b6350b7fc"/>
       </target>
-      <target file="biblioteka.o" lastModified="15bf3869414">
+      <target file="biblioteka.o" lastModified="15c4fa85732">
          <source file="..\..\..\biblioteka.c" lastModified="14b0e484400"/>
       </target>
-      <target file="tm_stm32f4_delay.o" lastModified="15bf3869900">
-         <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_delay.c" lastModified="14fdb0eed12"/>
+      <target file="tm_stm32f4_delay.o" lastModified="15c4fa86427">
+         <source file="..\..\..\tm_stm32f4_delay.c" lastModified="14fdb0eed12"/>
       </target>
-      <target file="main.o" lastModified="15bf3ca0f03">
-         <source file="..\..\..\main.c" lastModified="15bf3ca045e"/>
+      <target file="tm_stm32f4_hd44780.o" lastModified="15c4fa858a3">
+         <source file="..\..\..\tm_stm32f4_hd44780.c" lastModified="14e8ce4e540"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="15bf38694bb">
+      <target file="main.o" lastModified="15c4fde0596">
+         <source file="..\..\..\main.c" lastModified="15c4fddf00c"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="15c4fa85a29">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15b634ce90b"/>
       </target>
    </processor>
