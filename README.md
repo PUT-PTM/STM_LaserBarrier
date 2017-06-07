@@ -6,16 +6,16 @@ A laser barrier utilising a simple light sensor and a laser pointer to measure t
 The board measures a speed of an object passing between a set of mirrors which reflect a single laser beam into a light a sensor. It measures the time elapsed between passing the first and the second laser beam and calculates the speed.
 
 ### How to use
--The user button starts the measurment and resets the variables if needed.
--Potentiometer 1 is used for LCD contrast
--Potentiometer 2 is used to calibrate the sensor to adjust for variable light levels in the enviroment
+- The user button starts the measurment and resets the variables if needed.
+- Potentiometer 1 is used for LCD contrast
+- Potentiometer 2 is used to calibrate the sensor to adjust for variable light levels in the enviroment
 
--Prepare the mirrors, a laser source and aim it at the sensor
--The first screen shows the "Ready to start message", beneath is the light sensor readout(left) and the calibration readout(right)
--Press the user button to begin
--On the top is the time readout in ms
--On the bottom is the speed readout in m/s
--On the right are indicators that tell you if the object crossed once or twice
+- Prepare the mirrors, a laser source and aim it at the sensor
+- The first screen shows the "Ready to start message", beneath is the light sensor readout(left) and the calibration readout(right)
+- Press the user button to begin
+- On the top is the time readout in ms
+- On the bottom is the speed readout in m/s
+- On the right are indicators that tell you if the object crossed once or twice
 
 Project components:
 - STM32 microcontroller (STM32F407VG or equivalent)
