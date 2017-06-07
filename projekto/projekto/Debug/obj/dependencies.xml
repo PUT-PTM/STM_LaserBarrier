@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_boot /I..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_lib /I..\..\..\..\.. /I..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay /I..\..\..\..\..\STM_LaserBarrier\projekto /I..\..\..\..\..\Users\DISGUST-MAXIMUS /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis_lib\include /I..\..\..\..\..\STM_LaserBarrier /I..\..\..\..\..\STM_LaserBarrier\projekto\cmsis">
+   <includePath signature="/IC:\STM_LaserBarrier\projekto\cmsis_boot /IC:\STM_LaserBarrier\projekto\cmsis_lib /IC:\ /IC:\STM_LaserBarrier\projekto /IC:\STM_LaserBarrier\projekto\cmsis_lib\include /IC:\STM_LaserBarrier /IC:\STM_LaserBarrier\projekto\cmsis">
       <source file="..\..\..\tm_stm32f4_gpio.c" lastModified="14de25630e8">
          <include file="..\..\..\tm_stm32f4_gpio.h"/>
       </source>
@@ -15,6 +15,9 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
          <include file="..\..\..\defines.h"/>
          <include file="..\..\..\tm_stm32f4_gpio.h"/>
+      </source>
+      <source file="..\..\..\tm_stm32f4_timer_properties.c" lastModified="1488e449b75">
+         <include file="..\..\..\tm_stm32f4_timer_properties.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="15b63514edf">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -42,7 +45,7 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="15b632d988c">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dac.h" lastModified="15b634cd06b">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dac.h" lastModified="15b634cd06c">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="15b634cbbab">
@@ -63,16 +66,21 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="15b63512d4b">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
+      <source file="..\..\..\tm_stm32f4_hd44780.h" lastModified="14e8ce21680">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\tm_stm32f4_delay.h"/>
+         <include file="..\..\..\tm_stm32f4_gpio.h"/>
+      </source>
       <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="15b6338c9e6">
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.h" lastModified="149f3134801">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\defines.h"/>
+      <source file="..\..\..\tm_stm32f4_hd44780.c" lastModified="14e8ce4e540">
+         <include file="..\..\..\tm_stm32f4_hd44780.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="15b635014fc">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -84,8 +92,7 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.c" lastModified="1488e449b75">
-         <include file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.h"/>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="15c4fce6113">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="15b6350d90c">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
@@ -112,7 +119,7 @@
       </source>
       <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="15b632d68e4">
       </source>
-      <source file="..\..\..\biblioteka.h" lastModified="15b63566fc2">
+      <source file="..\..\..\biblioteka.h" lastModified="15c834372b1">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
@@ -127,29 +134,27 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
       </source>
-      <source file="..\..\..\biblioteka.c" lastModified="14b0e484400">
+      <source file="..\..\..\tm_stm32f4_delay.h" lastModified="15262d40c5f">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\attributes.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\tm_stm32f4_timer_properties.h"/>
+      </source>
+      <source file="..\..\..\biblioteka.c" lastModified="15c83437388">
          <include file="..\..\..\biblioteka.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="15b634ce906">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_delay.h" lastModified="15262d40c5f">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\defines.h"/>
-         <include file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\attributes.h"/>
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_timer_properties.h"/>
-      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15b634ce90b">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_delay.c" lastModified="14fdb0eed12">
-         <include file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\tm_stm32f4_delay.h"/>
-      </source>
-      <source file="..\..\..\..\..\Users\DISGUST-MAXIMUS\Downloads\tm_stm32f4_delay\attributes.h" lastModified="149eb8ec290">
+      <source file="..\..\..\tm_stm32f4_delay.c" lastModified="14fdb0eed12">
+         <include file="..\..\..\tm_stm32f4_delay.h"/>
       </source>
       <source file="..\..\..\defines.h" lastModified="14927dc8f9d">
       </source>
@@ -176,6 +181,14 @@
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="15b63354a5e">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\tm_stm32f4_timer_properties.h" lastModified="149f3134801">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\defines.h"/>
+      </source>
+      <source file="..\..\..\attributes.h" lastModified="149eb8ec290">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="15b63501501">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>

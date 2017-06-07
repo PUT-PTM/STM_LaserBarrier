@@ -1,27 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=projekto.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\projekto -TC:\CooCox\CoIDE\configuration\ProgramData\projekto/arm-gcc-link.ld -g">
-      <target file="projekto.elf" lastModified="15bf3ca114d">
-         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="15bf386933d"/>
-         <source file="..\obj\biblioteka.o" lastModified="15bf3869414"/>
-         <source file="..\obj\stm32f4xx_usart.o" lastModified="15bf38694bb"/>
-         <source file="..\obj\tm_stm32f4_adc.o" lastModified="15bf3869554"/>
-         <source file="..\obj\stm32f4xx_dac.o" lastModified="15bf38695e3"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="15bf3869651"/>
-         <source file="..\obj\main.o" lastModified="15bf3ca0f03"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15bf38697bb"/>
-         <source file="..\obj\stm32f4xx_adc.o" lastModified="15bf3869863"/>
-         <source file="..\obj\tm_stm32f4_delay.o" lastModified="15bf3869900"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15bf386998f"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="15bf3869a13"/>
-         <source file="..\obj\stm32f4xx_dma.o" lastModified="15bf3869aaa"/>
-         <source file="..\obj\stm32f4xx_spi.o" lastModified="15bf3869b48"/>
-         <source file="..\obj\stm32f4xx_i2c.o" lastModified="15bf3869beb"/>
-         <source file="..\obj\stm32f4xx_exti.o" lastModified="15bf3869c70"/>
-         <source file="..\obj\misc.o" lastModified="15bf3869cf1"/>
-         <source file="..\obj\tm_stm32f4_gpio.o" lastModified="15bf3869d88"/>
-         <source file="..\obj\tm_stm32f4_timer_properties.o" lastModified="15bf3869e15"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="15bf3869eff"/>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=projekto.map -O0 --gc-sections -LE:\CooCox\CoIDE\configuration\ProgramData\projekto -TE:\CooCox\CoIDE\configuration\ProgramData\projekto/arm-gcc-link.ld -g">
+      <target file="projekto.elf" lastModified="15c8343f5e3">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="15c831c0a5d"/>
+         <source file="..\obj\biblioteka.o" lastModified="15c83438478"/>
+         <source file="..\obj\tm_stm32f4_hd44780.o" lastModified="15c831c0df1"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="15c831c1004"/>
+         <source file="..\obj\tm_stm32f4_adc.o" lastModified="15c831c124c"/>
+         <source file="..\obj\stm32f4xx_dac.o" lastModified="15c831c13d1"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15c831c1514"/>
+         <source file="..\obj\main.o" lastModified="15c8343f0a3"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15c831c1865"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="15c831c1a0a"/>
+         <source file="..\obj\tm_stm32f4_delay.o" lastModified="15c831c1bcc"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15c831c1d74"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15c831c1f9f"/>
+         <source file="..\obj\syscalls.o" lastModified="15c831c2111"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="15c831c22d8"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="15c831c24ff"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="15c831c26c6"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="15c831c297e"/>
+         <source file="..\obj\misc.o" lastModified="15c831c2d90"/>
+         <source file="..\obj\tm_stm32f4_gpio.o" lastModified="15c831c2fd0"/>
+         <source file="..\obj\tm_stm32f4_timer_properties.o" lastModified="15c831c3139"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="15c831c3344"/>
       </target>
    </processor>
 </history>
